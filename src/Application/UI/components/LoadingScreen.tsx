@@ -137,38 +137,41 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                 </div>
             )}
             {!webGLError && (
-                <div
-                    style={Object.assign({}, styles.overlayText, {
-                        opacity: loadingTextOpacity,
-                    })}
-                >
-                   <div
-    style={styles.header}
-    className="loading-screen-header"
->
-    <div style={styles.logoContainer}>
-        <div>
-            <p style={styles.green}>
-                <b>USER:</b> Navaneeth M
-            </p>
+                    <div
+                        style={Object.assign({}, styles.overlayText, {
+                            opacity: loadingTextOpacity,
+                        })}
+                    >
+                        <div
+                            style={styles.header}
+                            className="loading-screen-header"
+                        >
+                            <div style={styles.logoContainer}>
+                                <div>
+                                    <p style={styles.green}>
+                                        <b>USER:</b> Navaneeth M
+                                    </p>
 
-            <p style={styles.green}>
-                <b>ROLE:</b> Web Developer 
-            </p>
+                                    <p style={styles.green}>
+                                        <b>ROLE:</b> Web Developer
+                                    </p>
 
-            <p style={styles.green}>
-                <b>STATUS:</b> Initializing Systems...
-            </p>
-        </div>
-    </div>
+                                    <p style={styles.green}>
+                                        <b>STATUS:</b> Initializing Systems...
+                                    </p>
+                                </div>
+                            </div>
 
-    <div style={styles.headerInfo}>
-        <p>Released: 10/05/2026</p>
-        <p>HHBIOS (C)2000 Heffernan Henry Inc.</p>
-        <p>Kerala, India</p>
-    </div>
-</div>
-                    <div style={styles.body} className="loading-screen-body">
+                            <div style={styles.headerInfo}>
+                                <p>Released: 10/05/2026</p>
+                                <p>HHBIOS (C)2000 Heffernan Henry Inc.</p>
+                                <p>Kerala, India</p>
+                            </div>
+                        </div>
+                        <div
+                            style={styles.body}
+                            className="loading-screen-body"
+                        >
                         <p>HSP S13 2000-2022 Special UC131S</p>
                         <div style={styles.spacer} />
                         {showBiosInfo && (
@@ -215,7 +218,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         className="loading-screen-footer"
                     >
                         <p>
-                            Press <b>DEL</b> to enter SETUP , <b>ESC</b> to skip
+                            Press <b>DEL</b> to enter SETUP, <b>ESC</b> to skip
                             memory test
                         </p>
                         <p>{getCurrentDate()}</p>
@@ -283,7 +286,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
 
                         <p>WebGL is required to run this site.</p>
                         <p>
-                            Please enable it or switch to a browser which
+                            Please enable it or switch to a browser that
                             supports WebGL
                         </p>
                     </div>
