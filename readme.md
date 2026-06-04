@@ -1,29 +1,49 @@
-# henryheffernan.com
+# 🚀 Navaneeth M - 3D Portfolio (Outer Site)
 
-This is one of two repositories created for my portfolio website <a href="https://henryheffernan.com/"><samp>henryheffernan.com</samp></a>. If you are looking for the 2D OS repository you can find it <a href="https://github.com/henryjeff/portfolio-inner-site"><samp>here</samp></a>! Thanks for taking the time to check this out. If you have any questions of comments, feel free to shoot me an email at <samp><a href="mailto:henryheffernan@gmail.com">henryheffernan@gmail.com</a></samp> or you can DM me on twitter <a href="https://twitter.com/henryheffernan"><samp>@henryheffernan</samp></a>.
+An immersive 3D web experience built with **Three.js** and **TypeScript**. This project serves as the interactive "Hardware" layer of my portfolio, featuring a realistic 3D desk setup that hosts a fully functional web-based OS inside the monitor.
 
-<br>
+## 🚀 Live Demo
+[Explore the 3D World](https://navaneethm.com/) (Link to your final deployment)
 
-To setup a dev environment:
+## ✨ Features
+- **Interactive 3D Scene:** A highly detailed 3D room environment built with Three.js.
+- **OS Integration:** Projected "Inner Site" via `CSS3DRenderer` using iframe occlusion techniques.
+- **Dynamic Camera:** Cinematic transitions between "Idle", "Desk", and "Monitor" views powered by `TWEEN.js`.
+- **Baked Lighting:** High-fidelity visuals optimized for the web using baked textures and ambient occlusion maps.
+- **Interactive Objects:** Clickable 3D hitboxes that trigger camera movements and OS interactions.
+- **Spatial Audio:** Immersive sound effects for environment atmosphere and hardware interaction.
 
-```bash
-# Clone the repository
+## 🛠️ Tech Stack
+- **Engine:** Three.js / WebGL
+- **Language:** TypeScript
+- **Bundler:** Webpack 5
+- **Animations:** GSAP & Tween.js
+- **UI Overlay:** React 17 (Loading screen and interface controls)
+- **Deployment:** Vercel
 
-# Install dependencies 
-npm i
+## 📂 Key Directory Structure
+- `src/Application/`: Main engine and scene orchestration.
+- `src/Application/World/`: 3D object definitions (Computer, Coffee, Environment).
+- `src/Application/Camera/`: Camera keyframes and transition management.
+- `static/models/`: GLB assets and baked texture maps.
 
-# Run the local dev server
-npm run dev
-```
+## 🚀 Getting Started
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/navaneeth-0930/Portfolio.git
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the local dev server:**
+   ```bash
+   npm run dev
+   ```
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-To serve a production build:
-
-```bash
-# Install dependencies if not already done - 'npi i'
-
-# Build for production
-npm run build
-
-# Serve the build using express
-npm start
-```
+---
+Developed by [Navaneeth M](https://github.com/navaneeth-0930)
